@@ -1,0 +1,9 @@
+Make an virtual environment
+Inside cloudfunction folder there is __main__.py file put that file outside
+Make a zip of virtual env and __main__.py and name as deploymnt.zip
+
+run this command:- bx wsk action update "translator" --kind python:3.7 "deployment.zip" --web true
+
+Errors solving:
+In __main__.py file
+res = response.get_result() make it res = response
